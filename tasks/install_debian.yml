@@ -1,0 +1,8 @@
+---
+# tasks file for aws-vault
+
+- name: "Downloading archive for {{ awsvault_app }} {{ awsvault_version }} to {{ awsvault_bin_path }} on Debian based systems"
+  get_url:
+    url: "{{ awsvault_dl_url }}"
+    dest: "{{ awsvault_bin_path }}/{{ awsvault_app }}"
+    mode: "{{ awsvault_file_mode }}"
