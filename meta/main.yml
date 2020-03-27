@@ -1,0 +1,32 @@
+---
+galaxy_info:
+  role_name: awsvault
+  author: Ali Muhammad
+  description: Installs/Uninstalls 'aws-vault' for managing aws sessions.
+  company: none
+  license: MIT
+  min_ansible_version: 2.4
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - xenial
+        - bionic
+    - name: Debian
+      versions:
+        - jessie
+        - stretch
+        - buster
+    - name: EL
+      versions:
+        - 7
+        - 8
+
+  galaxy_tags:
+    - awsvault
+    - system
+    - os
+    - cloud
+    - provisioning
+    - sessions
+    - credentials
