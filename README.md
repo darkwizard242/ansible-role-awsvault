@@ -2,7 +2,7 @@
 
 # Ansible Role: aws-vault
 
-Role to install (_by default_) `aws-vault` on **Debian/Ubuntu** and **EL** systems.
+Role to install (_by default_) [aws-vault](https://github.com/99designs/aws-vault) on **Debian/Ubuntu** and **EL** systems.
 
 ## Requirements
 
@@ -45,7 +45,7 @@ For default behaviour of role (i.e. installation of **awsvault**) in ansible pla
 ```yaml
 - hosts: servers
   roles:
-    - role: darkwizard242.awsvault
+    - darkwizard242.awsvault
 ```
 
 For customizing behavior of role (i.e. specifying the desired **awsvault** version) in ansible playbooks.
@@ -53,9 +53,9 @@ For customizing behavior of role (i.e. specifying the desired **awsvault** versi
 ```yaml
 - hosts: servers
   roles:
-    - role: darkwizard242.awsvault
-      vars:
-        awsvault_version: 2.5.7
+    - darkwizard242.awsvault
+  vars:
+    awsvault_version: 2.5.7
 ```
 
 For customizing behavior of role (i.e. placing binary of **awsvault** package in different location) in ansible playbooks.
@@ -63,9 +63,9 @@ For customizing behavior of role (i.e. placing binary of **awsvault** package in
 ```yaml
 - hosts: servers
   roles:
-    - role: darkwizard242.awsvault
-      vars:
-        awsvault_bin_path: /bin/
+    - darkwizard242.awsvault
+  vars:
+    awsvault_bin_path: /bin/
 ```
 
 ## License
