@@ -16,7 +16,7 @@ Available variables are listed below (located in `defaults/main.yml`):
 
 ```yaml
 awsvault_app: aws-vault
-awsvault_version: 5.3.2
+awsvault_version: 5.4.1
 awsvault_osarch: linux-amd64
 awsvault_dl_url: https://github.com/99designs/{{ awsvault_app }}/releases/download/v{{ awsvault_version }}/{{ awsvault_app }}-{{ awsvault_osarch }}
 awsvault_bin_path: /usr/local/bin
@@ -28,7 +28,7 @@ awsvault_file_mode: '0755'
 Variable           | Value (default)                                                                                                                      | Description
 ------------------ | ------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------
 awsvault_app       | aws-vault                                                                                                                            | Defines the app to install i.e. **aws-vault**
-awsvault_version   | 5.3.2                                                                                                                                | Defined to dynamically fetch the desired version to install. Defaults to: **5.3.2**
+awsvault_version   | 5.4.1                                                                                                                                | Defined to dynamically fetch the desired version to install. Defaults to: **5.4.1**
 awsvault_osarch    | linux-amd64                                                                                                                          | Defines os architecture. Used for obtaining the correct type of binaries based on OS System Architecture. Defaults to: **linux-amd64**
 awsvault_dl_url    | <https://github.com/99designs/{{> awsvault_app }}/releases/download/v{{ awsvault_version }}/{{ awsvault_app }}-{{ awsvault_osarch }} | Defines URL to download the awsvault binary from.
 awsvault_bin_path  | /usr/local/bin                                                                                                                       | Defined to dynamically set the appropriate path to store awsvault binary into. Defaults to (as generally available on any user's PATH): **/usr/local/bin**
@@ -55,7 +55,7 @@ For customizing behavior of role (i.e. specifying the desired **awsvault** versi
   roles:
     - darkwizard242.awsvault
   vars:
-    awsvault_version: 2.5.7
+    awsvault_version: 5.4.0
 ```
 
 For customizing behavior of role (i.e. placing binary of **awsvault** package in different location) in ansible playbooks.
