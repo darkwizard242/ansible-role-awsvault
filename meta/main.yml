@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   role_name: awsvault
-  author: Ali Muhammad
+  author: darkwizard242
   description: Installs/Uninstalls 'aws-vault' for managing aws credentials and sessions.
   company: none
   license: MIT
