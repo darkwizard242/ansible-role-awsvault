@@ -3,7 +3,10 @@
 
 awsvault_app: aws-vault
 awsvault_version: 6.3.1
-awsvault_osarch: linux-amd64
-awsvault_dl_url: https://github.com/99designs/{{ awsvault_app }}/releases/download/v{{ awsvault_version }}/{{ awsvault_app }}-{{ awsvault_osarch }}
+awsvault_os: linux
+awsvault_arch: amd64
+awsvault_dl_url: https://github.com/99designs/{{ awsvault_app }}/releases/download/v{{ awsvault_version }}/{{ awsvault_app }}-{{ awsvault_os }}-{{ awsvault_arch }}
 awsvault_bin_path: /usr/local/bin
+awsvault_file_owner: root
+awsvault_file_group: root
 awsvault_file_mode: '0755'
