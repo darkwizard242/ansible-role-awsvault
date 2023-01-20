@@ -2,7 +2,7 @@
 # defaults file for aws-vault
 
 awsvault_app: aws-vault
-awsvault_version: 6.6.1
+awsvault_version: 6.6.2
 awsvault_os: linux
 awsvault_arch: amd64
 awsvault_dl_url: https://github.com/99designs/{{ awsvault_app }}/releases/download/v{{ awsvault_version }}/{{ awsvault_app }}-{{ awsvault_os }}-{{ awsvault_arch }}
