@@ -2,7 +2,7 @@
 # tasks file for aws-vault | EL Family
 
 - name: EL Family | Downloading archive for {{ awsvault_app }} {{ awsvault_version }} to {{ awsvault_bin_path }}
-  get_url:
+  ansible.builtin.get_url:
     url: "{{ awsvault_dl_url }}"
     dest: "{{ awsvault_bin_path }}/{{ awsvault_app }}"
     owner: "{{ awsvault_file_owner }}"
